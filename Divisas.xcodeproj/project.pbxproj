@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A7BCFEE2471CBB700A37B66 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7BCFED2471CBB700A37B66 /* ExchangeRates.swift */; };
+		2A7BCFF02471CF0500A37B66 /* ExchangeRatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7BCFEF2471CF0500A37B66 /* ExchangeRatesManager.swift */; };
 		2AC67F7C247102F6000A6E01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC67F7B247102F6000A6E01 /* AppDelegate.swift */; };
 		2AC67F7E247102F6000A6E01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC67F7D247102F6000A6E01 /* SceneDelegate.swift */; };
 		2AC67F80247102F6000A6E01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC67F7F247102F6000A6E01 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A7BCFED2471CBB700A37B66 /* ExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
+		2A7BCFEF2471CF0500A37B66 /* ExchangeRatesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesManager.swift; sourceTree = "<group>"; };
 		2AC67F78247102F6000A6E01 /* Divisas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Divisas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC67F7B247102F6000A6E01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AC67F7D247102F6000A6E01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A7BCFEC2471CB5400A37B66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A7BCFED2471CBB700A37B66 /* ExchangeRates.swift */,
+				2A7BCFEF2471CF0500A37B66 /* ExchangeRatesManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A7BCFF12471E6A500A37B66 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AC67F7F247102F6000A6E01 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A7BCFF22471E6AD00A37B66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AC67F81247102F6000A6E01 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2AC67F6F247102F6000A6E01 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +87,9 @@
 			children = (
 				2AC67F7B247102F6000A6E01 /* AppDelegate.swift */,
 				2AC67F7D247102F6000A6E01 /* SceneDelegate.swift */,
-				2AC67F7F247102F6000A6E01 /* ViewController.swift */,
-				2AC67F81247102F6000A6E01 /* Main.storyboard */,
+				2A7BCFEC2471CB5400A37B66 /* Model */,
+				2A7BCFF12471E6A500A37B66 /* Controller */,
+				2A7BCFF22471E6AD00A37B66 /* View */,
 				2AC67F84247102F7000A6E01 /* Assets.xcassets */,
 				2AC67F86247102F7000A6E01 /* LaunchScreen.storyboard */,
 				2AC67F89247102F7000A6E01 /* Info.plist */,
@@ -139,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AC67F80247102F6000A6E01 /* ViewController.swift in Sources */,
+				2A7BCFF02471CF0500A37B66 /* ExchangeRatesManager.swift in Sources */,
+				2A7BCFEE2471CBB700A37B66 /* ExchangeRates.swift in Sources */,
 				2AC67F7C247102F6000A6E01 /* AppDelegate.swift in Sources */,
 				2AC67F7E247102F6000A6E01 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.emerdeveloper.Divisas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.emerdeveloper.Divisas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
