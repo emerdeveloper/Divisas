@@ -19,19 +19,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Divisas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu7-IV-pdm">
-                                <rect key="frame" x="20" y="54" width="374" height="60"/>
+                                <rect key="frame" x="20" y="54" width="374" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yFd-oW-oPt">
-                                <rect key="frame" x="20" y="154" width="374" height="708"/>
+                                <rect key="frame" x="20" y="94" width="374" height="768"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rfU-bR-5RE">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="349"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="379"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOw-gI-L2S">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="103"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="113"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fn7-yl-3pP">
                                                         <rect key="frame" x="0.0" y="10" width="374" height="24"/>
@@ -58,7 +58,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhD-lU-cRf">
-                                                <rect key="frame" x="0.0" y="123" width="374" height="103"/>
+                                                <rect key="frame" x="0.0" y="133" width="374" height="113"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6h-pB-jQJ">
                                                         <rect key="frame" x="0.0" y="10" width="374" height="24"/>
@@ -85,7 +85,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmH-Qz-H3N">
-                                                <rect key="frame" x="0.0" y="246" width="374" height="103"/>
+                                                <rect key="frame" x="0.0" y="266" width="374" height="113"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73Y-xO-DDC">
                                                         <rect key="frame" x="0.0" y="10" width="374" height="24"/>
@@ -114,16 +114,16 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24F-zc-lco">
-                                        <rect key="frame" x="0.0" y="359" width="374" height="349"/>
+                                        <rect key="frame" x="0.0" y="389" width="374" height="379"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000255573 (USD)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzt-cn-nap">
-                                                <rect key="frame" x="31" y="153.5" width="312" height="42"/>
+                                                <rect key="frame" x="31" y="168.5" width="312" height="42"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.000 (COP) =" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inQ-Xr-ibl">
-                                                <rect key="frame" x="108" y="113.5" width="158.5" height="30"/>
+                                                <rect key="frame" x="108" y="128.5" width="158.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -167,8 +167,110 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
         </scene>
+        <!--Bit Coin View Controller-->
+        <scene sceneID="aV4-vs-O5h">
+            <objects>
+                <viewController id="mVO-8B-Xti" customClass="BitCoinViewController" customModule="Divisas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lvb-eq-4Sc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="h5E-kc-ydz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ROF-0M-0tJ">
+                                <rect key="frame" x="20" y="54" width="374" height="165"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ByteCoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c95-na-QJB">
+                                        <rect key="frame" x="72" y="0.0" width="230" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="J4l-RE-AuT"/>
+                                            <constraint firstAttribute="height" constant="60" id="iOZ-Kn-ACh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAd-7D-0gf" userLabel="Coin view">
+                                        <rect key="frame" x="20" y="85" width="334" height="80"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rky-Io-xnD">
+                                                <rect key="frame" x="20" y="0.0" width="294" height="80"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BBu-pa-3wc">
+                                                        <rect key="frame" x="0.0" y="0.5" width="80" height="79"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="16O-I0-tea"/>
+                                                            <constraint firstAttribute="width" constant="80" id="fvM-IY-1Gl"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kri-ER-jq0">
+                                                        <rect key="frame" x="90" y="25" width="143.5" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0t-bT-t3V">
+                                                        <rect key="frame" x="243.5" y="25" width="50.5" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="rky-Io-xnD" firstAttribute="leading" secondItem="vAd-7D-0gf" secondAttribute="leading" constant="20" id="H0E-YT-wj4"/>
+                                            <constraint firstAttribute="bottom" secondItem="rky-Io-xnD" secondAttribute="bottom" id="IQ3-iF-zyq"/>
+                                            <constraint firstItem="rky-Io-xnD" firstAttribute="top" secondItem="vAd-7D-0gf" secondAttribute="top" id="eMa-rb-cBg"/>
+                                            <constraint firstAttribute="height" constant="80" id="fcy-3k-RLE"/>
+                                            <constraint firstAttribute="trailing" secondItem="rky-Io-xnD" secondAttribute="trailing" constant="20" id="lp1-BK-y8g"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb0-Go-6IT">
+                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="vJG-sD-mWb"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ROF-0M-0tJ" firstAttribute="leading" secondItem="gFX-XQ-wER" secondAttribute="leading" constant="20" id="9mq-US-cyz"/>
+                            <constraint firstItem="gFX-XQ-wER" firstAttribute="trailing" secondItem="ROF-0M-0tJ" secondAttribute="trailing" constant="20" id="Cd0-Sy-86j"/>
+                            <constraint firstAttribute="bottom" secondItem="h5E-kc-ydz" secondAttribute="bottom" id="Ga0-F1-Jwo"/>
+                            <constraint firstItem="gFX-XQ-wER" firstAttribute="bottom" secondItem="eb0-Go-6IT" secondAttribute="bottom" id="NWg-Gc-BFS"/>
+                            <constraint firstItem="h5E-kc-ydz" firstAttribute="top" secondItem="Lvb-eq-4Sc" secondAttribute="top" id="UpS-vG-Qwi"/>
+                            <constraint firstItem="gFX-XQ-wER" firstAttribute="trailing" secondItem="eb0-Go-6IT" secondAttribute="trailing" id="cWK-Gm-wOP"/>
+                            <constraint firstAttribute="trailing" secondItem="h5E-kc-ydz" secondAttribute="trailing" id="i8o-SL-Hfd"/>
+                            <constraint firstItem="eb0-Go-6IT" firstAttribute="leading" secondItem="gFX-XQ-wER" secondAttribute="leading" id="nSp-Cy-eGm"/>
+                            <constraint firstItem="h5E-kc-ydz" firstAttribute="leading" secondItem="Lvb-eq-4Sc" secondAttribute="leading" id="pra-cA-vSY"/>
+                            <constraint firstItem="ROF-0M-0tJ" firstAttribute="top" secondItem="gFX-XQ-wER" secondAttribute="top" constant="10" id="zif-HS-Pml"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gFX-XQ-wER"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelBitCoin" destination="Kri-ER-jq0" id="6iU-7r-Uyu"/>
+                        <outlet property="labelCurrency" destination="p0t-bT-t3V" id="1PR-hJ-pNy"/>
+                        <outlet property="pickerCurrency" destination="eb0-Go-6IT" id="KP2-tn-G91"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HcI-4w-RyP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910.14492753623199" y="136.60714285714286"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="595" height="893"/>
+        <image name="bitcoinsign.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>
