@@ -8,13 +8,13 @@
 
 import UIKit
 
-class BitCoinViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ByteCoinViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var labelBitCoin: UILabel!
     @IBOutlet weak var labelCurrency: UILabel!
     @IBOutlet weak var pickerCurrency: UIPickerView!
     
-    let coinManager = CoinManager()
+    let coinManager = ByteCoinManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,7 @@ class BitCoinViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        labelCurrency.text = coinManager.currencyArray[row]
+        //labelCurrency.text = coinManager.currencyArray[row]
         coinManager.getCoinPrice(for: labelCurrency.text!)
     }
 

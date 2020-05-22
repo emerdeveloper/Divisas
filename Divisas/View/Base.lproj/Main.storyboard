@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T6R-kF-t7Y">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Divisas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Divisas" id="BYZ-38-t0r" customClass="ViewController" customModule="Divisas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
         </scene>
-        <!--Bit Coin View Controller-->
+        <!--Byte Coin View Controller-->
         <scene sceneID="aV4-vs-O5h">
             <objects>
-                <viewController id="mVO-8B-Xti" customClass="BitCoinViewController" customModule="Divisas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ByteCoin" id="mVO-8B-Xti" customClass="ByteCoinViewController" customModule="Divisas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lvb-eq-4Sc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,8 +268,88 @@
             </objects>
             <point key="canvasLocation" x="910.14492753623199" y="136.60714285714286"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="wNB-3e-b5v">
+            <objects>
+                <viewController storyboardIdentifier="Home" id="T6R-kF-t7Y" customClass="HomeViewController" customModule="Quizzler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dc5-Pj-HsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3QT-hn-Jx6" userLabel="background">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qyz-1d-kfc" userLabel="Container View">
+                                <rect key="frame" x="20" y="222" width="374" height="452.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you want to see?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ii7-e3-5Pl">
+                                        <rect key="frame" x="0.0" y="20" width="374" height="119.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rj-XF-2JY">
+                                        <rect key="frame" x="0.0" y="239.5" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="iYh-1A-pPb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Divisas" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectOptionPressed:" destination="T6R-kF-t7Y" eventType="touchUpInside" id="dkg-bA-wDs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjn-Yn-JUf">
+                                        <rect key="frame" x="0.0" y="352.5" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="z5r-ab-9GN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="ByteCoin" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectOptionPressed:" destination="T6R-kF-t7Y" eventType="touchUpInside" id="kwO-My-kJu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ii7-e3-5Pl" secondAttribute="trailing" id="26Z-WZ-rIH"/>
+                                    <constraint firstAttribute="trailing" secondItem="gjn-Yn-JUf" secondAttribute="trailing" id="2ZS-rz-KqG"/>
+                                    <constraint firstItem="6rj-XF-2JY" firstAttribute="leading" secondItem="Qyz-1d-kfc" secondAttribute="leading" id="9lQ-cg-Nst"/>
+                                    <constraint firstItem="6rj-XF-2JY" firstAttribute="top" secondItem="Ii7-e3-5Pl" secondAttribute="bottom" constant="100" id="Ac6-dM-TOf"/>
+                                    <constraint firstItem="gjn-Yn-JUf" firstAttribute="leading" secondItem="Qyz-1d-kfc" secondAttribute="leading" id="Ciw-y4-cus"/>
+                                    <constraint firstAttribute="bottom" secondItem="gjn-Yn-JUf" secondAttribute="bottom" constant="20" id="FRS-Oc-UC4"/>
+                                    <constraint firstAttribute="trailing" secondItem="6rj-XF-2JY" secondAttribute="trailing" id="N2U-XD-b2H"/>
+                                    <constraint firstItem="Ii7-e3-5Pl" firstAttribute="leading" secondItem="Qyz-1d-kfc" secondAttribute="leading" id="NDF-Uf-qhi"/>
+                                    <constraint firstItem="Ii7-e3-5Pl" firstAttribute="top" secondItem="Qyz-1d-kfc" secondAttribute="top" constant="20" id="n4f-9b-H92"/>
+                                    <constraint firstItem="gjn-Yn-JUf" firstAttribute="top" secondItem="6rj-XF-2JY" secondAttribute="bottom" constant="33" id="yNv-f0-Dmt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1450980392" green="0.17254901959999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3QT-hn-Jx6" firstAttribute="leading" secondItem="dc5-Pj-HsS" secondAttribute="leading" id="6lv-P0-9ll"/>
+                            <constraint firstItem="3QT-hn-Jx6" firstAttribute="top" secondItem="dc5-Pj-HsS" secondAttribute="top" id="Gmd-ZI-f7e"/>
+                            <constraint firstAttribute="bottom" secondItem="3QT-hn-Jx6" secondAttribute="bottom" id="MGw-2x-rhI"/>
+                            <constraint firstItem="czc-b1-V6K" firstAttribute="trailing" secondItem="Qyz-1d-kfc" secondAttribute="trailing" constant="20" id="PUO-GQ-uSw"/>
+                            <constraint firstAttribute="trailing" secondItem="3QT-hn-Jx6" secondAttribute="trailing" id="T7g-D5-Xkw"/>
+                            <constraint firstItem="Qyz-1d-kfc" firstAttribute="centerY" secondItem="dc5-Pj-HsS" secondAttribute="centerY" id="X0s-n2-kQJ"/>
+                            <constraint firstItem="Qyz-1d-kfc" firstAttribute="leading" secondItem="czc-b1-V6K" secondAttribute="leading" constant="20" id="XfU-tB-G86"/>
+                            <constraint firstItem="Qyz-1d-kfc" firstAttribute="centerX" secondItem="dc5-Pj-HsS" secondAttribute="centerX" id="yDF-Og-jPX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="czc-b1-V6K"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ex-sj-iSM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-726.08695652173924" y="126.5625"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Rectangle" width="322" height="68"/>
         <image name="background" width="595" height="893"/>
         <image name="bitcoinsign.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
