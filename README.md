@@ -19,4 +19,4 @@ Both options in real time
 
 |  Home      |  Divisas      |  ByteCoin      |
 |------------|-------------|------------|
-| ![Portrait](Documentation/portrait_home.png) |  ![Portrait](Documentation/portrait_divisas)  | ![Portrait](Documentation/portrait_bytecoin) |
+| ![Portrait](Documentation/portrait_home.png) |  ![Portrait](Documentation/portrait_divisas.png)  | ![Portrait](Documentation/portrait_bytecoin.png) |
