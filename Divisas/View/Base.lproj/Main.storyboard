@@ -12,26 +12,26 @@
             <objects>
                 <viewController storyboardIdentifier="Divisas" id="BYZ-38-t0r" customClass="ViewController" customModule="Divisas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2Jw-LS-gVP">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Divisas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu7-IV-pdm">
-                                <rect key="frame" x="20" y="54" width="374" height="0.0"/>
+                                <rect key="frame" x="20" y="10" width="374" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yFd-oW-oPt">
-                                <rect key="frame" x="20" y="94" width="374" height="768"/>
+                                <rect key="frame" x="20" y="50" width="374" height="758"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rfU-bR-5RE">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="379"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="374"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOw-gI-L2S">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="113"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="111.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fn7-yl-3pP">
                                                         <rect key="frame" x="0.0" y="10" width="374" height="24"/>
@@ -58,7 +58,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhD-lU-cRf">
-                                                <rect key="frame" x="0.0" y="133" width="374" height="113"/>
+                                                <rect key="frame" x="0.0" y="131.5" width="374" height="111"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6h-pB-jQJ">
                                                         <rect key="frame" x="0.0" y="10" width="374" height="24"/>
@@ -85,7 +85,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmH-Qz-H3N">
-                                                <rect key="frame" x="0.0" y="266" width="374" height="113"/>
+                                                <rect key="frame" x="0.0" y="262.5" width="374" height="111.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73Y-xO-DDC">
                                                         <rect key="frame" x="0.0" y="10" width="374" height="24"/>
@@ -114,16 +114,16 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24F-zc-lco">
-                                        <rect key="frame" x="0.0" y="389" width="374" height="379"/>
+                                        <rect key="frame" x="0.0" y="384" width="374" height="374"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000255573 (USD)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzt-cn-nap">
-                                                <rect key="frame" x="31" y="168.5" width="312" height="42"/>
+                                                <rect key="frame" x="31" y="166" width="312" height="42"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.000 (COP) =" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inQ-Xr-ibl">
-                                                <rect key="frame" x="108" y="128.5" width="158.5" height="30"/>
+                                                <rect key="frame" x="108" y="126" width="158.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -165,21 +165,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
+            <point key="canvasLocation" x="1074" y="-98"/>
         </scene>
         <!--Byte Coin View Controller-->
         <scene sceneID="aV4-vs-O5h">
             <objects>
                 <viewController storyboardIdentifier="ByteCoin" id="mVO-8B-Xti" customClass="ByteCoinViewController" customModule="Divisas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lvb-eq-4Sc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="h5E-kc-ydz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ROF-0M-0tJ">
-                                <rect key="frame" x="20" y="54" width="374" height="165"/>
+                                <rect key="frame" x="20" y="10" width="374" height="165"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ByteCoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c95-na-QJB">
                                         <rect key="frame" x="72" y="0.0" width="230" height="60"/>
@@ -237,7 +237,7 @@
                                 </subviews>
                             </stackView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb0-Go-6IT">
-                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
+                                <rect key="frame" x="0.0" y="592" width="414" height="216"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="216" id="vJG-sD-mWb"/>
                                 </constraints>
@@ -266,12 +266,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HcI-4w-RyP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="910.14492753623199" y="136.60714285714286"/>
+            <point key="canvasLocation" x="1074" y="670"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="wNB-3e-b5v">
             <objects>
-                <viewController storyboardIdentifier="Home" id="T6R-kF-t7Y" customClass="HomeViewController" customModule="Quizzler" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="T6R-kF-t7Y" customClass="HomeViewController" customModule="Divisas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dc5-Pj-HsS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,6 +299,7 @@
                                         </state>
                                         <connections>
                                             <action selector="selectOptionPressed:" destination="T6R-kF-t7Y" eventType="touchUpInside" id="dkg-bA-wDs"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToDivisas" id="55V-ao-464"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjn-Yn-JUf">
@@ -312,6 +313,7 @@
                                         </state>
                                         <connections>
                                             <action selector="selectOptionPressed:" destination="T6R-kF-t7Y" eventType="touchUpInside" id="kwO-My-kJu"/>
+                                            <segue destination="mVO-8B-Xti" kind="presentation" identifier="goToByteCoin" id="FD3-ki-1z1"/>
                                         </connections>
                                     </button>
                                 </subviews>

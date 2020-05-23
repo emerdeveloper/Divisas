@@ -8,9 +8,15 @@
 
 import Foundation
 
+protocol ByteCoinManagerDelegate {
+    func didUpdateByteCoin(_ byteCoinRate: ByteCoinRate)
+    func didFaildWithError(_ error: Error)
+}
+
 struct ByteCoinManager {
     let baseURL = "https://rest.coinapi.io/v1/exchangerate/BTC"
     let apiKey = "?apikey=346105E3-2E9C-455D-B49E-5721EE19FE72"
+    var delegate: ByteCoinManagerDelegate?
     
     let currencyArray = ["AUD", "BRL","CAD","CNY","EUR","GBP","HKD","IDR","ILS","INR","JPY","MXN","NOK","NZD","PLN","RON","RUB","SEK","SGD","USD","ZAR"]
     
@@ -24,11 +30,13 @@ struct ByteCoinManager {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error!)
+                    self.delegate?.didFaildWithError(error!)
                 }
                 
                 if let safeData = data {
-                    self.parseJSON(safeData)
+                    if let byteCoinRate = self.parseJSON(safeData) {
+                        self.delegate?.didUpdateByteCoin(byteCoinRate)
+                    }
                 }
             }
             
@@ -40,10 +48,9 @@ struct ByteCoinManager {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(ByteCoinRate.self, from: data)
-            print(decodedData)
             return decodedData
         } catch {
-            print(error)
+            self.delegate?.didFaildWithError(error)
             return nil
         }
     }

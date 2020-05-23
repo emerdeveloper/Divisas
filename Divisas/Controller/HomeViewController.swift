@@ -18,30 +18,40 @@ class HomeViewController: UIViewController {
     
     @IBAction func selectOptionPressed(_ sender: UIButton) {
        if sender.tag == 0 {
-//            Safe rootViewController
-           if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Divisas") as? ViewController
-           {
-            UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController = vc;
-           }
-        print("Divisas")
+            self.performSegue(withIdentifier: "goToDivisas", sender: self)
        } else {
-//            Safe rootViewController
-           if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ByteCoin") as? ByteCoinViewController
-           {
-               UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController = vc;
-           }
-       }
+            self.performSegue(withIdentifier: "goToByteCoin", sender: self)
+        }
     }
+        
+    // MARK: - Navigation
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "goToDivisas" {
+//
+//        } else if segue.identifier == "goToByteCoin" {
+//
+//        }
+//    }
+
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Replace Root windows
+     
+     if sender.tag == 0 {
+     //            Safe rootViewController
+                if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Divisas") as? ViewController
+                {
+                 UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController = vc;
+                }
+             print("Divisas")
+            } else {
+     //            Safe rootViewController
+                if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ByteCoin") as? ByteCoinViewController
+                {
+                    UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController = vc;
+                }
+            }
+     
+     */
 }
